@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace oop_intro
 {
-    public class Bird
+    public abstract class Bird
     {
         public string Name { get; private set; }
         public string Color { get; private set; }
@@ -17,14 +17,15 @@ namespace oop_intro
             Color = color;
         }
 
-        public void Speak()
-        {
-            Console.WriteLine($"My name is {Name} and I am a {Color} bird.");
-        }
+        //This method is marked with Abstract keyword
+        //This means that any classes extending on Bird must implement this
+        //Abstract methods don't have a method body
+        public abstract void Speak();
 
-        public void Fly()
+        public virtual void Fly()
         {
-            Console.WriteLine($"I'm {Name} and I can fly high in the blue sky!");
+            //Default implementation
+            Console.WriteLine("Hi there! I can fly.");
         }
     }
 }
