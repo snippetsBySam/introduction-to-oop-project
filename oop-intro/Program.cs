@@ -11,3 +11,7 @@ pippa.Sleep();
 Penguin pingu = new Penguin("Pingu", "Black & White");
 pingu.Speak();
 pingu.Fly();
+
+Parrot polly = new Parrot("Polly", "green");
+polly.Speak();
+polly.Fly();
