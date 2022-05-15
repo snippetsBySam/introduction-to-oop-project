@@ -17,7 +17,7 @@ namespace oop_intro
             Color = color;
         }
 
-        public abstract void speak();
+        public abstract void Speak();
 
         public virtual void Fly()
         {
