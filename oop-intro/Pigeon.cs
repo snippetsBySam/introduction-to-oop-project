@@ -19,5 +19,10 @@ namespace oop_intro
         {
             Console.WriteLine("Delicious pizza!");
         }
+
+        public void Sleep()
+        {
+            Console.WriteLine("I'm a sleeping pigeon");
+        }
     }
 }
